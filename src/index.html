@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="logo">🚀 Hackathon 2025</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Problem Statements</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Innovate. Code. Compete.</h1>
+        <p>Join us for the ultimate hackathon experience.</p>
+        <button class="btn">Register Now</button>
+    </section>
+
+    <section class="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>The Hackathon 2025 is an event where developers, designers, and innovators come together to solve real-world problems.</p>
+        </div>
+        <div class="about-img">
+            <img src="about-image.jpg" alt="About Hackathon">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-slider">
+            <div class="contact-forms">
+                <div class="contact-form active">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email 1">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email 2">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email 3">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+        </div>
+    </section>
+
+    <script>
+        const cursor = document.querySelector(".cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Sliding Contact Forms
+        const forms = document.querySelectorAll(".contact-form");
+        let currentIndex = 0;
+
+        document.querySelector(".next-btn").addEventListener("click", () => {
+            forms[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % forms.length;
+            forms[currentIndex].classList.add("active");
+        });
+
+        document.querySelector(".prev-btn").addEventListener("click", () => {
+            forms[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex - 1 + forms.length) % forms.length;
+            forms[currentIndex].classList.add("active");
+        });
+
+    </script>
+    
+
+</body>
+<div id="app">
+    <div id="hero">
+      <h1>NEON<br/>CURSOR</h1>
+      <a target="_blank" href="https://github.com/klevron/threejs-toys">github/threejs-toys</a>
+    </div>
+  </div>
+</html>
+
+
