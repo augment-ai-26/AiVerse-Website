@@ -1,0 +1,189 @@
+/* Base styles */
+.timeline-container {
+  background: url("https://img.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg")no-repeat center center/cover;
+  position: relative;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  padding-top: 80px;
+}
+
+/* Overlay effect */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Dark overlay effect */
+  z-index: 1;
+}
+
+/* Ensure content stays above the overlay */
+.timeline-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background-color: #86ff00;
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+  min-height: 60px;
+}
+
+.timeline-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  background-color: #86ff00;
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Content boxes with precise positioning */
+.timeline-content {
+  width: 260px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: calc(50% + 1rem);
+  float: left;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 1rem);
+  float: right;
+}
+
+/* Connecting lines with precise positioning */
+.connecting-line {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd) .connecting-line {
+  right: calc(50% + 1rem);
+  width: calc(50% - 260px - 2rem);
+}
+
+.timeline-item:nth-child(even) .connecting-line {
+  left: calc(50% + 1rem);
+  width: calc(50% - 260px - 2rem);
+}
+
+/* Content box styling */
+.content-box {
+  background-color: rgba(31, 41, 55, 0.5);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.content-date {
+  color: #86ff00;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.content-item {
+  color: #9ca3af;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+/* Hover effects */
+.timeline-item:hover .timeline-circle {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.timeline-item:hover .content-box {
+  background-color: rgba(31, 41, 55, 0.7);
+}
+
+/* Clear float */
+.timeline-item::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeline {
+    max-width: 100%;
+  }
+
+  .timeline-line {
+    left: 2rem;
+  }
+
+  .timeline-circle {
+    left: 2rem;
+  }
+
+  .timeline-item {
+    margin-left: 2rem;
+  }
+
+  .connecting-line {
+    width: 2px !important;
+    height: 2rem;
+    left: 2rem !important;
+    top: 2rem;
+  }
+
+  .timeline-content {
+    width: calc(100% - 4rem);
+    max-width: 260px;
+    float: none !important;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 2rem 0 0 4rem;
+  }
+}

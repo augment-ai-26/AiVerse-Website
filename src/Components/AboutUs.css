@@ -1,0 +1,121 @@
+/* General Styles */
+.about-container {
+  background-color: #0a0f1e;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Layout */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Image Slider */
+.image-slider {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.4); */
+  border: 3px #86ff00;
+}
+
+.event-image1 {
+  /* width: 100%; */
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Event Box */
+.event-box {
+  background-color: rgba(20, 20, 30, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: left;
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.2);
+}
+
+.event-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.event-description {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.event-start-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Countdown Timer */
+.countdown {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  margin-top: 15px;
+}
+
+/* Hexagon Countdown Timer */
+.hexagon {
+  width: 70px;
+  height: 70px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.4);
+}
+
+.time {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
