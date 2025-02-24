@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./Judges.css";
 import Sample from "./Sample";
 import { FaLinkedin } from "react-icons/fa";
-import judge1 from "../Images/shridivya.png";
-import judge2 from "../Images/Shashank.jpg";
-import judge3 from "../Images/Misbah.jpg";
-import judge4 from "../Images/kaushal.jpeg";
-import judge5 from "../Images/Jaiswal-2 (1).JPG";
-import judge6 from "../Images/Bharat.jpg";
+import judge1 from "../Images/shridivya.webp";
+import judge2 from "../Images/Shashank.webp";
+import judge3 from "../Images/Misbah.webp";
+import judge4 from "../Images/kaushal.webp";
+import judge5 from "../Images/Jaiswal.webp";
+import judge6 from "../Images/Bharat.webp";
 import judge7 from "../Images/Nusrat.webp";
 
 const judgesData = [
