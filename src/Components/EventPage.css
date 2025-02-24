@@ -119,10 +119,11 @@
   max-width: 600px;
   color: white;
   text-align: left;
+  padding-top: 20px;
 }
 
 .event-info h1 {
-  font-size: 65px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -142,6 +143,66 @@
   z-index: 2;
   animation: float 3s ease-in-out infinite;
 }
+/* Event Details Container - Arranged in a Row */
+.event-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 6rem;
+  margin-left: 36rem;
+  flex-wrap: nowrap; /* Ensure all items stay in a row */
+}
+
+/* Card Styling */
+.event-details-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 220px; /* Ensure uniform card width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+
+/* Hover Effect */
+.event-details-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Details Text */
+.details {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Value Text */
+.details-value {
+  font-size: 22px;
+  color: #86ff00;
+  font-weight: bold;
+}
+
+/* Download Button */
+.download-button {
+  background: #ffcc00;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.download-button:hover {
+  background: #e6b800;
+}
+
 
 /* Keyframes for up-and-down animation */
 @keyframes float {

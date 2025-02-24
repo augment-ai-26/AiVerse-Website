@@ -16,7 +16,9 @@ const Sample = () => {
         <Link to="/faq">FAQ</Link>
       </div>
       
-      <button className="sample-register-button">Register Now</button>
+      <button className="sample-register-button"
+      onClick={() => window.open("https://forms.gle/EP8JoqhBbdp7hSde9", "_blank")}
+      >Register Now</button>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const EventPage = () => {
   return (
     <div>
       <Sample/>
-      
+
       <div className="event-container">
         <div className="main-section">
           <div className="event-info">
@@ -20,13 +20,47 @@ const EventPage = () => {
               Presented By <br />
               Augment AI
             </h1>
-            <button className="register-now">Register Now</button>
-            <p className="tagline">Uniting | Creating | Innovation</p>
+
+            {/* Register Button with Google Form Link */}
+            <button 
+              className="register-now"
+              onClick={() => window.open("https://forms.gle/EP8JoqhBbdp7hSde9", "_blank")}
+            >
+              Register Now
+            </button>
+
+            {/* Tagline */}
+            <p className="tagline">Uniting | Creating | Innovation | Creativity</p>
+
+            {/* Event Details Section */}
+            <div className="event-details-container">
+              <div className="event-details-card">
+                <p className="details"><strong>🏆 Prize Pool</strong></p>
+                <p className="details-value">₹45,000</p>
+              </div>
+
+              <div className="event-details-card">
+                <p className="details"><strong>📝 Registration Fee</strong></p>
+                <p className="details-value">₹200 per team</p>
+              </div>
+
+              <div className="event-details-card">
+                <p className="details"><strong>📄 Brochure</strong></p>
+                <button 
+                  className="download-button"
+                  onClick={() => window.open("https://your-brochure-link.com", "_blank")}
+                >
+                  Download
+                </button>
+              </div>
+            </div>
+
           </div>
+
           <img className="event-image" src={Image1} alt="Event" />
         </div>
       </div>
-      
+
       <AboutUs />
       <OrganizingTeam />
       <Footer />
@@ -35,6 +69,8 @@ const EventPage = () => {
 };
 
 export default EventPage;
+
+
 
 
 

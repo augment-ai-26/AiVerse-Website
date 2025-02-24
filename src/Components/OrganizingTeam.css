@@ -20,6 +20,7 @@
 .first-row {
   display: flex;
   justify-content: center;
+  gap: 30px; /* Adjust spacing */
   margin-bottom: 40px;
 }
 
