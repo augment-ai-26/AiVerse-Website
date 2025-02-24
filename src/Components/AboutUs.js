@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./AboutUs.css";
-// import about1 from '../Images/1.webp';
+import about1 from '../Images/1.webp';
 import about2 from '../Images/2.webp';
 import about3 from '../Images/3.webp';
 import about4 from '../Images/4.webp';
@@ -57,6 +57,7 @@ const AboutUs = () => {
         <div className="image-slider">
           <Slider {...settings}>
             {/* <img src={about1} alt="Event 1" className="event" /> */}
+            <img src={about1} alt="Event 1" className="event" />
             <img src={about2} alt="Event 2" className="event" />
             <img src={about3} alt="Event 3" className="event" />
             <img src={about4} alt="Event 4" className="event" />

@@ -12,7 +12,7 @@ import core6 from "../Images/vishesh.webp";
 // Organizing Heads
 const organizingHeads = [
   { name: "Rutajit", role: "Mentor", image: mentor },
-  { name: "New Head", role: "Co-Mentor", image: core1 }, // Change image & role accordingly
+  // { name: "New Head", role: "Co-Mentor", image: core1 }, // Change image & role accordingly
 ];
 
 // Team Members
