@@ -1,44 +1,65 @@
-
-  /* Full-screen background with a shady black overlay */
+/* Full-screen background with a shady black overlay */
 .problem-statement {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("https://img.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg") no-repeat center center/cover;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://img.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg") no-repeat center center/cover;
+  position: relative;
+  text-align: center;
+  padding: 20px; /* Padding for mobile spacing */
+}
+
+/* Add a black overlay on top of the background */
+.problem-statement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Shady black effect */
+  z-index: 1;
+}
+
+/* Text styling */
+.announcement {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  animation: dance 1.5s infinite alternate ease-in-out;
+  position: relative;
+  z-index: 2; /* Ensure text appears above the overlay */
+}
+
+/* Dancing Text Animation */
+@keyframes dance {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px) rotate(-2deg); }
+  50% { transform: translateY(5px) rotate(2deg); }
+  75% { transform: translateY(-5px) rotate(-2deg); }
+  100% { transform: translateY(0); }
+}
+
+/* 🔥 Responsive Design for Mobile Screens */
+@media screen and (max-width: 768px) {
+  .problem-statement {
+      height: auto;
+      min-height: 100vh;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
-  
-  /* Add a black overlay on top of the background */
-  .problem-statement::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85); /* Shady black effect */
-    z-index: 1;
-  }
-  
-  /* Text styling */
+
   .announcement {
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    animation: dance 1.5s infinite alternate ease-in-out;
-    position: relative;
-    z-index: 2; /* Ensure text appears above the overlay */
+      font-size: 30px; /* Smaller font size for mobile */
+      text-align: center;
+      padding: 10px;
   }
-  
-  /* Dancing Text Animation */
-  @keyframes dance {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-5px) rotate(-2deg); }
-    50% { transform: translateY(5px) rotate(2deg); }
-    75% { transform: translateY(-5px) rotate(-2deg); }
-    100% { transform: translateY(0); }
-  }
+}
+
   

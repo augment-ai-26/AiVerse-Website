@@ -1,86 +1,157 @@
-/* Sample Navbar */
+/* Fixed Navbar */
 .sample-navbar {
-    width: 100%;
-    padding: 20px 50px;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Stays at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(15, 1, 49, 0.2); /* Solid background to ensure visibility */
+}
+
+/* Navbar Title */
+.sample-title {
+  color: white;
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding-left: 100px;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.sample-links {
+  display: flex;
+  gap: 50px;
+}
+
+.sample-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.sample-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #86ff00;
+  backdrop-filter: blur(5px);
+}
+
+/* Register Button */
+.sample-register-button {
+  background-color: #86ff00;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-right: 200px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover */
+.sample-register-button:hover {
+  background-color: #70cc00;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .sample-navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .sample-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Container for AI-VERSE and Hamburger */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hamburger Button (Top Right Corner) */
+.hamburger-button {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
+}
+
+/* Mobile Menu - Initially Hidden */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block; /* Show hamburger button */
+    margin-right: 30px;
+  }
+  .sample-title{
+    font-size: 40px;
+  }
+  /* Ensure AI-VERSE & Hamburger are in the same row */
+  .sample-navbar {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .navbar-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Sticks to the top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensures it's above all content */
-    background: transparent; /* No background */
+    width: 100%;
+    /* padding: 0 10px; */
   }
-  
-  /* Sample Navbar title */
-  .sample-title {
-    color: white;
-    font-size: 40px;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    padding-left: 100px;
-    text-decoration: none;
-  }
-  
-  /* Sample Navbar links */
+
+  /* Hide navbar links initially */
   .sample-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: rgba(7, 0, 22, 0.9);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  /* Show the menu when it's open */
+  .sample-links.show-menu {
     display: flex;
-    gap: 50px;
   }
-  
-  .sample-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 19px;
-    font-weight: 500;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  /* Hover effect - Background appears */
-  .sample-links a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
-    color: #86ff00; /* Neon green effect */
-    backdrop-filter: blur(5px); /* Blur effect for modern look */
-  }
-  
-  /* Sample Register Button */
+
+  /* Ensure Register Button is in the column layout */
   .sample-register-button {
-    background-color: #86ff00; /* Neon green */
-    color: black;
-    font-size: 17px;
-    font-weight: bold;
-    padding: 12px 20px;
-    margin-right: 200px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px auto; /* Center button in mobile menu */
   }
-  
-  /* Sample Register Button Hover */
-  .sample-register-button:hover {
-    background-color: #70cc00;
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6);
-  }
-  
-  /* Responsive Sample Navbar */
-  @media (max-width: 768px) {
-    .sample-navbar {
-      flex-direction: column;
-      gap: 10px;
-      padding: 15px;
-    }
-  
-    .sample-links {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
+}
+
   

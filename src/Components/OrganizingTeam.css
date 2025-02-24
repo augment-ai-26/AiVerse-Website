@@ -133,6 +133,9 @@
   .second-row {
       grid-template-columns: repeat(3, 1fr);
   }
+  /* .first-row{
+    margin-left: 10px;
+  } */
 }
 
 @media (max-width: 900px) {
@@ -146,5 +149,8 @@
   .second-row {
       flex-direction: column;
       display: flex;
+  }
+  .first-row{
+    margin-left: 30px;
   }
 }

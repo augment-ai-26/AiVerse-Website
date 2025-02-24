@@ -160,8 +160,9 @@
   }
 
   .timeline-title {
-    font-size: 2rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
+    margin-top: 5rem;
   }
 
   .timeline {
@@ -186,7 +187,7 @@
   }
 
   .timeline-content {
-    width: 100%;
+    width: 90%;
     max-width: none;
     float: none !important;
     margin: 0 !important;
