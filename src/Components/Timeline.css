@@ -150,11 +150,23 @@
   display: table;
   clear: both;
 }
+/* Base styles remain the same until media queries */
 
-/* Responsive design */
+/* Enhanced Responsive design */
 @media (max-width: 768px) {
+  .timeline-container {
+    padding: 1rem;
+    padding-top: 60px;
+  }
+
+  .timeline-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .timeline {
     max-width: 100%;
+    margin-left: 0;
   }
 
   .timeline-line {
@@ -163,27 +175,73 @@
 
   .timeline-circle {
     left: 2rem;
+    transform: translate(-50%, 0);
+    top: 0;
   }
 
   .timeline-item {
-    margin-left: 2rem;
-  }
-
-  .connecting-line {
-    width: 2px !important;
-    height: 2rem;
-    left: 2rem !important;
-    top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    padding-left: 3rem;
   }
 
   .timeline-content {
-    width: calc(100% - 4rem);
-    max-width: 260px;
+    width: 100%;
+    max-width: none;
     float: none !important;
+    margin: 0 !important;
   }
 
   .timeline-item:nth-child(odd) .timeline-content,
   .timeline-item:nth-child(even) .timeline-content {
-    margin: 2rem 0 0 4rem;
+    margin: 0 !important;
+    float: none;
+  }
+
+  .connecting-line {
+    display: none;
+  }
+
+  .content-box {
+    width: calc(100% - 1rem);
+    margin-top: 1rem;
+  }
+
+  .content-date {
+    font-size: 0.9rem;
+  }
+
+  .content-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+  .timeline-container {
+    padding: 0.5rem;
+    padding-top: 40px;
+  }
+
+  .timeline-title {
+    font-size: 1.5rem;
+  }
+
+  .timeline-circle {
+    left: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .timeline-line {
+    left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .check-icon {
+    font-size: 0.8rem;
   }
 }

@@ -119,4 +119,80 @@
   .footer-icons a:hover {
     opacity: 1;
   }
-  
+  /* Keep all existing styles above, then add these media queries at the bottom */
+
+/* Tablet Breakpoint */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+  }
+
+  .footer-heading {
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links li {
+    margin: 0;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 15px;
+  }
+
+  .footer-container {
+    gap: 25px;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-right p {
+    font-size: 13px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
