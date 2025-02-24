@@ -18,7 +18,7 @@ const Footer = () => {
           <h3 className="footer-heading">Useful Links</h3>
           <ul className="footer-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/Contact">contacts</a></li>
+            <li><a href="/contacts">contacts</a></li>
           </ul>
         </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
           </p>
           <p>
             <strong>Email:</strong>{" "}
-            <a href="mailto:reachraitacmw@gmail.com">augmentai@gmail.com</a>
+            <a href="mailto:augment_ai@bmsce.ac.in">augment_ai@bmsce.ac.in</a>
           </p>
           
           <p>

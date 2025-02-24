@@ -35,8 +35,8 @@ const Contact = () => {
             <div>
               <h4 className="contact-label">Email</h4>
               <p>
-                <a href="mailto:augmentai@gmail.com" className="email-link">
-                  augmentai@gmail.com
+                <a href="mailto:augment_ai@bmsce.ac.in" className="email-link">
+                  augment_ai@bmsce.ac.in
                 </a>
               </p>
             </div>
@@ -48,8 +48,8 @@ const Contact = () => {
             <div>
               <h4 className="contact-label">Instagram</h4>
               <p>
-                <a href="https://instagram.com/Bmsce_augment.ai" target="_blank" rel="noopener noreferrer" className="instagram-link">
-                  Bmsce_augment.ai
+                <a href="https://www.instagram.com/bmsce_augment.ai?igsh=MWJhOGU0aGRnZmYxZw==" target="_blank" rel="noopener noreferrer" className="instagram-link">
+                  bmsce_augment.ai
                 </a>
               </p>
             </div>

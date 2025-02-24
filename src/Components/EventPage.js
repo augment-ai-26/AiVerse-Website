@@ -48,7 +48,7 @@ const EventPage = () => {
                 <p className="details"><strong>📄 Brochure</strong></p>
                 <button 
                   className="download-button"
-                  onClick={() => window.open("https://your-brochure-link.com", "_blank")}
+                  onClick={() => window.open("https://drive.google.com/file/d/1g2XQH5jd5jD4fzshxU2LNz3o1NJEkLz3/view?usp=sharing", "_blank")}
                 >
                   Download
                 </button>

@@ -72,7 +72,7 @@ const AboutUs = () => {
           Augment.AI, an initiative by the Information Science Department at BMS College of Engineering, is a thriving community dedicated to Artificial Intelligence. Our vision is to bring together like-minded individuals who are passionate about AI, fostering learning, collaboration, and innovation. Through workshops, projects, and events, we aim to equip students with hands-on experience in AI and its real-world applications. This hackathon is a testament to our mission, challenging participants to develop AI-driven solutions that enhance existing services. We believe in pushing the boundaries of what AI can achieve, encouraging creativity and problem-solving. By participating, you’ll not only sharpen your technical skills but also contribute to impactful innovations. Join us in shaping the future of AI and be part of a movement that blends technology with purpose. Let’s innovate, collaborate, and augment the world with AI!
           </p>
           <h3 className="event-start-text">Events Starts in</h3>
-          <Countdown date={new Date("2025-02-25T00:00:00")} renderer={renderer} />
+          <Countdown date={new Date("2025-03-19T12:00:00")} renderer={renderer} />
 
 
         </div>

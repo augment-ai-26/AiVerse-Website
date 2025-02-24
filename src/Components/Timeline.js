@@ -35,7 +35,7 @@ function Timeline() {
       ]
     },
     {
-      date: "25 March 2025",
+      date: "02 April 2025",
       items: [
         "Announcement of Winners"
       ]

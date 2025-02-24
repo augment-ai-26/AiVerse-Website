@@ -149,8 +149,17 @@
   .second-row {
       flex-direction: column;
       display: flex;
+      align-items: center; /* Center align the cards */
   }
-  .first-row{
-    margin-left: 30px;
+
+  .first-row .team-card,
+  .second-row .team-card {
+      width: 90%; /* Ensures all cards take the same width */
+      max-width: 300px; /* Limits max width for consistency */
+  }
+
+  .first-row {
+      margin-left: 0; /* Prevents shifting */
   }
 }
+
