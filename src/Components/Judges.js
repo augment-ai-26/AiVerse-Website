@@ -50,7 +50,7 @@ const judgesData = [
     name: "Bharat",
     image: judge6,
     description:
-      "Bharat is a Software Developer at Amazon with over 12 years of experience in web application development, cloud technologies, and artificial intelligence. He specializes in microservices design, optimizing CI/CD pipelines, and implementing advanced AI/ML systems. With dual master's degrees in Computer Science and Electrical Engineering, he brings a strong technical foundation to building scalable and intelligent software solutions.",
+      "Bharat is a Software Developer at Amazon with over 12 years of experience in web application development, cloud technologies, and artificial intelligence. He specializes in microservices design, optimizing CI/CD pipelines, and implementing advanced AI/ML systems. With dual master's degrees in Computer Science and Electrical Engineering, he brings a strong technical foundation to building scalable and intelligent software solutions.                                                    ",
     linkedin: "https://www.linkedin.com/in/bharattiwary/",
   },
   {
