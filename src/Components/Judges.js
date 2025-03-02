@@ -9,7 +9,7 @@ import judge4 from "../Images/kaushal.webp";
 import judge5 from "../Images/Jaiswal.webp";
 import judge6 from "../Images/Bharat.webp";
 import judge7 from "../Images/Nusrat.webp";
-
+import judge8 from "../Images/judge8.jpg";
 const judgesData = [
   {
     name: "Shridivya",
@@ -22,7 +22,7 @@ const judgesData = [
     name: "Shashank",
     image: judge2,
     description:
-      "Shashank is passionate about Machine Learning, Data Science, and Big Data, actively exploring advancements in the field. Currently a Teaching Assistant for Algorithms at NYU, he previously worked at Oracle as a Software Engineer Intern, applying state-of-the-art ML and NLP techniques to develop executive-focused tools. He has also led an end-to-end scalable Big Data project, showcasing his expertise in building intelligent and efficient solutions.",
+      "I’m a Senior Software Engineer with expertise in cloud computing, AI, and big data. I specialize in building scalable cloud solutions, automating workflows, and enhancing system security. With a strong background in machine learning and NLP, I’m passionate about AI-driven automation and creating innovative solutions.",
     linkedin: "https://www.linkedin.com/in/shashank-s-12a23922/",
   },
   {
@@ -59,6 +59,13 @@ const judgesData = [
     description:
       "Nusrat Shaheen is an Oracle HCM Cloud Principal Consultant with over 10 years of experience in optimizing HR processes and leading successful implementations. Passionate about innovation, she mentors teams, authors insightful articles on HR technology, and serves as a hackathon judge, driving excellence and transformation in the industry.",
     linkedin: "https://www.linkedin.com/in/nusrat-shaheen/",
+  },
+  {
+    name: "Aniruddha Joshi",
+    image: judge8,
+    description:
+      "Software engineer and researcher with extensive experience in computer vision, extended reality, and deep learning. Focused on leveraging AI to generate data-driven insights and actionable solutions",
+    linkedin: "/",
   },
 ];
 
