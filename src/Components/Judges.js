@@ -10,6 +10,8 @@ import judge5 from "../Images/Jaiswal.webp";
 import judge6 from "../Images/Bharat.webp";
 import judge7 from "../Images/Nusrat.webp";
 import judge8 from "../Images/judge8.jpg";
+import judge9 from "../Images/judge9.jpg";
+import judge10 from "../Images/judge10.jpg";
 const judgesData = [
   {
     name: "Shridivya",
@@ -67,6 +69,22 @@ const judgesData = [
       "Software engineer and researcher with extensive experience in computer vision, extended reality, and deep learning. Focused on leveraging AI to generate data-driven insights and actionable solutions",
     linkedin: "/",
   },
+  {
+    name: "Anthony Rassi",
+    image: judge9,
+    description:
+      "Co-founder & COO at pap! (YC S24). Previously SWE at Addepar, IBM & studied Computer Engineering and Computer science at USC.",
+    linkedin: "/",
+  },
+  {
+    name: "Kamal",
+    image: judge10,
+    description:
+      "Kamal is the Co-Founder and CEO of PAP, a Y Combinator startup with $2.6M in funding from General Catalyst and Nfx. Previously, Kamal was a Machine Learning & Security Engineer at Apple and graduated from UC Berkeley EECS.",
+    linkedin: "/",
+  },
+  
+  
 ];
 
 const Judges = () => {
