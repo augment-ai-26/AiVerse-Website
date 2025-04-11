@@ -33,7 +33,7 @@ const Sample = () => {
             setMenuOpen(false); // Close menu after clicking register
           }}
         >
-          Register Now
+          Completed !!
         </button>
       </div>
     </div>
