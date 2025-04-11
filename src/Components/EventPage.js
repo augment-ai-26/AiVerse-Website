@@ -24,7 +24,7 @@ const EventPage = () => {
             {/* Register Button with Google Form Link */}
             <button 
               className="register-now"
-              onClick={() => }
+              onClick={() => window.open("https://forms.gle/EP8JoqhBbdp7hSde9", "_blank")}
             >
               Completed!!
             </button>
