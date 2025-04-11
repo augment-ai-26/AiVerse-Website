@@ -77,7 +77,7 @@ const judgesData = [
     linkedin: "/",
   },
   {
-    name: "Kamal",
+    name: "Kamal Nahas",
     image: judge10,
     description:
       "Kamal is the Co-Founder and CEO of PAP, a Y Combinator startup with $2.6M in funding from General Catalyst and Nfx. Previously, Kamal was a Machine Learning & Security Engineer at Apple and graduated from UC Berkeley EECS.",
